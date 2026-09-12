@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A&T Sports Inc. — professional basketball, athlete development, and community impact." />
+  <title>A&T Sports Inc. | New Site Concept</title>
+  <link rel="icon" type="image/jpeg" href="assets/at-sports-logo.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="A&T Sports home">
+      <img class="brand-logo-img" src="assets/at-sports-logo.jpeg" alt="A&T Sports Inc. logo" />
+      <span class="brand-copy">
+        <strong>SPORTS</strong>
+        <small>INC.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <div class="nav-dropdown" data-nav-dropdown>
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+          Teams <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html#teams" role="menuitem"><span>ABA</span><strong>Circle City Pythons</strong><small>ABA</small></a>
+          <a href="dothan-snipers.html" role="menuitem"><span>PBA</span><strong>Dothan Snipers</strong><small>PBA</small></a>
+          <a href="columbus-vipers.html" role="menuitem"><span>PBA</span><strong>Columbus Vipers</strong><small>PBA</small></a>
+        </div>
+      </div>
+      <a href="#schedule">Schedule</a>
+      <a href="#roster">Team Roster</a>
+      <a href="#tickets">Tickets</a>
+      <a href="#news">News</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-dark">
+      <div class="hero-court" aria-hidden="true">
+        <span class="court-circle"></span>
+        <span class="court-line court-line-a"></span>
+        <span class="court-line court-line-b"></span>
+      </div>
+      <div class="hero-orb orb-a" aria-hidden="true"></div>
+      <div class="hero-orb orb-b" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> A&T SPORTS, INC.</div>
+          <h1>CHAMPIONS<br>AREN'T BORN.<br><em>THEY'RE BUILT.</em></h1>
+          <p class="hero-lede">Building competitive basketball programs, developing athletes, and creating opportunities that reach beyond the court.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#teams">Explore Our Teams <span>↗</span></a>
+            <a class="btn btn-ghost" href="#schedule">View Schedule <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Basketball feature image">
+          <div class="hero-photo-shell">
+            <img class="feature-photo-img" src="assets/feature-action-square.png" alt="Stylized A&T basketball action feature image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>PRO BASKETBALL</span><i>◆</i><span>ATHLETE DEVELOPMENT</span><i>◆</i><span>COMMUNITY</span><i>◆</i><span>COMPETITION</span><i>◆</i>
+          <span>PRO BASKETBALL</span><i>◆</i><span>ATHLETE DEVELOPMENT</span><i>◆</i><span>COMMUNITY</span><i>◆</i><span>COMPETITION</span><i>◆</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section-light" id="about">
+      <div class="container intro-grid">
+        <div class="section-kicker reveal">01 / WHO WE ARE</div>
+        <div class="intro-heading reveal">
+          <h2>MORE THAN<br>A SCOREBOARD.</h2>
+        </div>
+        <div class="intro-copy reveal delay-1">
+          <p class="lead">A&T Sports is built around competition, opportunity, and the belief that the game can develop more than athletes.</p>
+          <p>This new site direction gives the organization room to tell that story with a stronger hierarchy, cleaner information, and a premium sports identity.</p>
+          <a class="text-link" href="#teams">Meet the organization <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="container editorial-media reveal">
+        <div class="photo-placeholder media-wide">
+          <span class="photo-tag">ORGANIZATION / TEAM PHOTO</span>
+          <div class="court-diagram" aria-hidden="true"></div>
+          <p>Large editorial photography lives here.</p>
+        </div>
+        <aside class="quote-card">
+          <span class="quote-mark">“</span>
+          <blockquote>A family that prays together, stays together.</blockquote>
+          <small>A&T SPORTS</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="teams section-dark" id="teams">
+      <div class="container section-head reveal">
+        <div>
+          <div class="section-kicker light">02 / ABA TEAMS</div>
+          <h2>ABA PROGRAMS.<br><em>ONE IDENTITY.</em></h2>
+        </div>
+        <p>Team details are intentionally modular. Once the updated rosters, logos, cities, leagues, and photography are ready, we can drop them straight in.</p>
+      </div>
+
+      <div class="container team-grid">
+        <article class="team-card team-python reveal">
+          <div class="team-image team-logo-card">
+            <img class="team-logo-img" src="assets/circle-city-pythons.png" alt="Circle City Pythons logo" />
+            <span class="team-number">01</span>
+          </div>
+          <div class="team-meta">
+            <div><small>TEAM 01</small><h3>Circle City Pythons</h3></div>
+            <a href="#" aria-label="View Circle City Pythons">↗</a>
+          </div>
+          <div class="team-sub"><span>Dothan, Alabama</span><span>ABA</span></div>
+        </article>
+
+        <article class="team-card reveal delay-1">
+          <div class="team-image team-tone-b">
+            <span class="team-number">02</span>
+            <span class="team-placeholder">TEAM IMAGE / LOGO</span>
+          </div>
+          <div class="team-meta">
+            <div><small>TEAM TWO</small><h3>Team Name</h3></div>
+            <a href="#" aria-label="View Team Two">↗</a>
+          </div>
+          <div class="team-sub"><span>City, State</span><span>League</span></div>
+        </article>
+
+        <article class="team-card reveal delay-2">
+          <div class="team-image team-tone-c">
+            <span class="team-number">03</span>
+            <span class="team-placeholder">TEAM IMAGE / LOGO</span>
+          </div>
+          <div class="team-meta">
+            <div><small>TEAM THREE</small><h3>Team Name</h3></div>
+            <a href="#" aria-label="View Team Three">↗</a>
+          </div>
+          <div class="team-sub"><span>City, State</span><span>League</span></div>
+        </article>
+      </div>
+
+      <div class="container pba-bridge reveal">
+        <div class="pba-bridge-copy">
+          <small>Separate League Presentation</small>
+          <h3>PBA teams live on their own page.</h3>
+          <p>Dothan Snipers and Columbus Vipers have been added to the site separately so the homepage can stay focused on the ABA presentation while the PBA teams get their own dedicated space.</p>
+        </div>
+        <a class="btn btn-dark" href="pba-teams.html">View PBA Teams ↗</a>
+      </div>
+
+    </section>
+
+    <section class="impact section-accent">
+      <div class="container impact-grid">
+        <div class="impact-copy reveal">
+          <div class="section-kicker dark">03 / THE IMPACT</div>
+          <h2>THE WORK<br><span>GOES BEYOND</span><br>THE GAME.</h2>
+        </div>
+        <div class="impact-stats reveal delay-1">
+          <div class="stat"><strong data-count="3">03</strong><span>Team programs</span></div>
+          <div class="stat"><strong>—</strong><span>Athletes developed</span></div>
+          <div class="stat"><strong>—</strong><span>Championships</span></div>
+          <div class="stat"><strong>—</strong><span>Community initiatives</span></div>
+        </div>
+      </div>
+      <p class="placeholder-note">Placeholder metrics — replace only with verified numbers.</p>
+    </section>
+    <section class="schedule section-light" id="schedule">
+      <div class="container section-head dark-head reveal schedule-headline">
+        <div>
+          <div class="section-kicker">04 / 2026-27 SCHEDULE</div>
+          <h2>CIRCLE CITY<br><em>PYTHONS.</em></h2>
+        </div>
+        <p>Real schedule data is now in place for the Circle City Pythons. This section is styled to feel premium on the A&T site while staying easy to update as future teams and schedules are added.</p>
+      </div>
+
+      <div class="container schedule-stage">
+        <div class="schedule-overview reveal">
+          <div class="schedule-team-top">
+            <img class="schedule-crest" src="assets/circle-city-pythons.png" alt="Circle City Pythons logo" />
+            <div>
+              <small>ABA • DOTHAN, ALABAMA</small>
+              <h3>2026-27 REGULAR SEASON</h3>
+              <p>Strike Fear. Spread Poison. The schedule below is based on the provided season graphic and gives the Circle City Pythons a dedicated, on-brand schedule section inside the new A&T Sports homepage.</p>
+            </div>
+          </div>
+
+          <div class="schedule-meta-grid">
+            <div class="schedule-fact">
+              <span>Season Opener</span>
+              <strong>Oct 24 vs SW Warriors</strong>
+              <small>Abbeville, Alabama</small>
+            </div>
+            <div class="schedule-fact">
+              <span>Home Court</span>
+              <strong>Abbeville Gymnasium</strong>
+              <small>101 Armory Drive • Abbeville, Alabama 36310</small>
+            </div>
+            <div class="schedule-fact">
+              <span>Contact</span>
+              <strong>circlecitypythons@gmail.com</strong>
+              <small>For tickets, questions, and team information.</small>
+            </div>
+            <div class="schedule-fact">
+              <span>Community</span>
+              <strong>Join the Python 2 Pack</strong>
+              <small>Kids Club &amp; The Python 2 Collective (Adults)</small>
+            </div>
+          </div>
+
+          <div class="schedule-cta">
+            <a class="btn btn-primary" href="#tickets">Season Tickets ↗</a>
+            <a class="btn btn-ghost-dark" href="#teams">Back to Teams →</a>
+          </div>
+        </div>
+
+        <div class="schedule-art reveal delay-1">
+          <img class="schedule-poster-img" src="assets/circle-city-schedule.jpg" alt="Circle City Pythons 2026-27 ABA schedule poster" />
+          <span class="schedule-art-label">Official season graphic</span>
+        </div>
+      </div>
+
+      <div class="container schedule-months">
+        <article class="schedule-month-card reveal">
+          <div class="month-heading"><span>MONTH 01</span><h3>October</h3></div>
+          <ul class="month-game-list">
+            <li class="schedule-game-item home"><span class="schedule-date">24</span><div class="schedule-game-copy"><small>HOME</small><strong>vs SW Warriors</strong></div><span class="schedule-location">Abbeville, AL</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">25</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Mississippi Silverbacks</strong></div><span class="schedule-location">Abbeville, AL</span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-month-card reveal delay-1">
+          <div class="month-heading"><span>MONTH 02</span><h3>November</h3></div>
+          <ul class="month-game-list">
+            <li class="schedule-game-item home"><span class="schedule-date">1</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Atlanta Defenders</strong></div><span class="schedule-location">Abbeville, AL</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">7</span><div class="schedule-game-copy"><small>HOME</small><strong>vs GA Magic</strong></div><span class="schedule-location">Abbeville, AL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">14</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Tallahassee Musketeers</strong></div><span class="schedule-location">Tallahassee, FL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">21</span><div class="schedule-game-copy"><small>AWAY</small><strong>at SW Warriors</strong></div><span class="schedule-location">Atlanta, GA</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">28</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Hawthorne Hurricanes</strong></div><span class="schedule-location">Hawthorne, FL</span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-month-card reveal delay-2">
+          <div class="month-heading"><span>MONTH 03</span><h3>December</h3></div>
+          <ul class="month-game-list">
+            <li class="schedule-game-item home"><span class="schedule-date">5</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Wardawgs</strong></div><span class="schedule-location">Dothan, AL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">12</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Clay Co Storm</strong></div><span class="schedule-location">Clay Co, FL</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">19</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Hawthorne Hurricanes</strong></div><span class="schedule-location">Dothan, AL</span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-month-card reveal">
+          <div class="month-heading"><span>MONTH 04</span><h3>January</h3></div>
+          <ul class="month-game-list">
+            <li class="schedule-game-item home"><span class="schedule-date">2</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Tallahassee Musketeers</strong></div><span class="schedule-location">Dothan, AL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">9</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Gulfport Kings</strong></div><span class="schedule-location">Gulfport, MS</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">17</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Mississippi Silverbacks</strong></div><span class="schedule-location">Jackson, MS</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">23</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Gulfport Kings</strong></div><span class="schedule-location">Dothan, AL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">30</span><div class="schedule-game-copy"><small>AWAY</small><strong>at GA Magic</strong></div><span class="schedule-location">Macon, GA</span></li>
+          </ul>
+        </article>
+
+        <article class="schedule-month-card reveal delay-1">
+          <div class="month-heading"><span>MONTH 05</span><h3>February</h3></div>
+          <ul class="month-game-list">
+            <li class="schedule-game-item away"><span class="schedule-date">6</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Atlanta Defenders</strong></div><span class="schedule-location">Atlanta, GA</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">13</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Wardawgs</strong></div><span class="schedule-location">Huntsville, AL</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">20</span><div class="schedule-game-copy"><small>HOME</small><strong>vs Knoxville Commerce</strong></div><span class="schedule-location">Dothan, AL</span></li>
+            <li class="schedule-game-item home"><span class="schedule-date">21</span><div class="schedule-game-copy"><small>HOME</small><strong>vs GA Magic</strong></div><span class="schedule-location">Dothan, AL</span></li>
+            <li class="schedule-game-item away"><span class="schedule-date">27</span><div class="schedule-game-copy"><small>AWAY</small><strong>at Clay Co Storm</strong></div><span class="schedule-location">Dothan, AL</span></li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="container schedule-footnote">Circle City Pythons 2026-27 ABA schedule section styled from the provided season graphic.</p>
+    </section>
+
+    <section class="mission section-dark">
+      <div class="container mission-grid">
+        <div class="mission-photo reveal">
+          <div class="photo-placeholder photo-tall">
+            <span class="photo-tag">COMMUNITY / ATHLETE PHOTO</span>
+            <p>Use a human moment here, not another generic game photo.</p>
+          </div>
+          <span class="vertical-type">DEVELOP • LEAD • COMPETE</span>
+        </div>
+        <div class="mission-copy reveal delay-1">
+          <div class="section-kicker light">05 / WHY IT MATTERS</div>
+          <h2>BUILDING<br>PLAYERS.<br><em>BUILDING PEOPLE.</em></h2>
+          <p>Competition is only one part of the story. This section is designed to highlight athlete development, personal growth, team unity, and community involvement.</p>
+          <div class="mission-points">
+            <span>ATHLETE DEVELOPMENT</span>
+            <span>PERSONAL GROWTH</span>
+            <span>TEAM UNITY</span>
+            <span>COMMUNITY IMPACT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news section-light" id="news">
+      <div class="container section-head dark-head reveal">
+        <div>
+          <div class="section-kicker">06 / LATEST</div>
+          <h2>FROM<br><em>THE FLOOR.</em></h2>
+        </div>
+        <a class="text-link" href="#news">View all news <span>→</span></a>
+      </div>
+
+      <div class="container news-grid">
+        <article class="news-card reveal">
+          <div class="news-image"><span>NEWS IMAGE</span></div>
+          <div class="news-meta"><span>ORGANIZATION</span><time>DATE</time></div>
+          <h3>Headline placeholder for the latest A&T Sports announcement.</h3>
+          <a href="#">Read story →</a>
+        </article>
+        <article class="news-card reveal delay-1">
+          <div class="news-image news-image-b"><span>TEAM IMAGE</span></div>
+          <div class="news-meta"><span>TEAM</span><time>DATE</time></div>
+          <h3>Use this space for game recaps, roster news, or team updates.</h3>
+          <a href="#">Read story →</a>
+        </article>
+        <article class="news-card reveal delay-2">
+          <div class="news-image news-image-c"><span>COMMUNITY IMAGE</span></div>
+          <div class="news-meta"><span>COMMUNITY</span><time>DATE</time></div>
+          <h3>Community stories get the same visual weight as competition.</h3>
+          <a href="#">Read story →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta section-accent" id="tickets">
+      <div class="container cta-inner reveal">
+        <div>
+          <div class="section-kicker dark">READY FOR TIP-OFF?</div>
+          <h2>THE NEXT CHAPTER<br>STARTS <span>HERE.</span></h2>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-dark" href="#tickets">Get Tickets ↗</a>
+          <a class="btn btn-outline-dark" href="#contact">Contact A&T →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-dark" id="contact">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="brand footer-logo">
+          <img class="brand-logo-img" src="assets/at-sports-logo.jpeg" alt="A&T Sports Inc. logo" />
+          <span class="brand-copy"><strong>SPORTS</strong><small>INC.</small></span>
+        </div>
+        <p>Professional basketball organization focused on excellence on and off the court.</p>
+      </div>
+
+      <div class="footer-col">
+        <small>NAVIGATION</small>
+        <a href="#about">About</a><a href="#teams">ABA Teams</a><a href="pba-teams.html">PBA Teams</a><a href="#schedule">Schedule</a><a href="#roster">Team Roster</a><a href="#tickets">Tickets</a><a href="#news">News</a>
+      </div>
+
+      <div class="footer-col">
+        <small>CONTACT</small>
+        <a href="tel:+17065307325">(706) 530-7325</a>
+        <span>Angela Culliver / Owner</span>
+        <span>Georgia, USA</span>
+      </div>
+
+      <div class="footer-col">
+        <small>SOCIAL</small>
+        <a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="#">YouTube ↗</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> A&T Sports Inc.</span>
+      <span>CHAMPIONS ARE NOT BORN. THEY ARE MADE.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

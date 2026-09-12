@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A&T Sports Inc. | PBA Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+<style>.vipers-feature-hero{background:linear-gradient(90deg,rgba(7,9,20,.94),rgba(7,9,20,.2)),url("assets/columbus-vipers-feature.jpg") center/cover}.team-photo-thumb{width:120px;height:82px;object-fit:cover}.pba-logo-thumb{width:72px;height:50px;object-fit:cover}</style></head>
+<body class="pba-page">
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="index.html">
+      <img class="brand-logo-img" src="assets/at-sports-logo.jpeg" alt="A&T Sports Inc. logo" />
+      <span class="brand-copy"><strong>SPORTS</strong><small>INC.</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <div class="nav-dropdown active" data-nav-dropdown>
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
+          Teams <span class="nav-caret" aria-hidden="true">▾</span>
+        </button>        <div class="nav-dropdown-menu" role="menu">
+          <a href="index.html#teams" role="menuitem"><span>ABA</span><strong>Circle City Pythons</strong><small>ABA</small></a>
+          <a href="dothan-snipers.html" role="menuitem"><span>PBA</span><strong>Dothan Snipers</strong><small>PBA</small></a>
+          <a href="columbus-vipers.html" role="menuitem"><span>PBA</span><strong>Columbus Vipers</strong><small>PBA</small></a>
+        </div>
+      </div>
+      <a href="index.html#schedule">Schedule</a>
+      <a href="#profiles">Team Roster</a>
+      <a href="index.html#tickets">Tickets</a>
+      <a href="index.html#news">News</a>
+      <a class="btn btn-primary nav-cta" href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="pba-page-hero section-dark vipers-feature-hero">
+      <div class="container pba-hero-grid">
+        <div >
+          <div class="section-kicker light">A&T SPORTS INC. / PBA PROGRAMS</div>
+          <h1>COLUMBUS<br><em>VIPERS.</em></h1>
+          <p class="hero-lede">These teams have been added on their own page so the homepage can stay centered on the ABA presentation. Dothan Snipers and Columbus Vipers now have a clean, separate presence inside the A&T Sports website.</p><img class="pba-logo-thumb" src="assets/pba-logo.jpeg" alt="PBA logo"><div class="hero-actions">
+            <a class="btn btn-primary" href="#profiles">Explore the Teams ↗</a>
+            <a class="btn btn-ghost" href="index.html">Back to Homepage →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pba-detail-section section-light" id="vipers">
+      <div class="container pba-detail-grid">
+        <div class="pba-detail-copy">
+          <div class="section-kicker dark">TEAM PROFILE / COLUMBUS</div>
+          <h2>COLUMBUS<br><em>VIPERS.</em></h2>
+          <p>The Columbus Vipers are also carved out into the PBA presentation so the homepage does not blur ABA and PBA programs together. The design keeps the visual system consistent while letting the purple-and-gold identity still stand out.</p>
+          <div class="pba-stat-row">
+            <div class="pba-stat-box"><span>League</span><strong>PBA</strong></div>
+            <div class="pba-stat-box"><span>Market</span><strong>Columbus, GA</strong></div>
+            <div class="pba-stat-box"><span>Website Status</span><strong>Profile Live</strong></div>
+          </div>
+          <div class="pba-detail-actions">
+            <a class="btn btn-dark" href="#profiles">Back to Teams ↗</a>
+            <a class="btn btn-outline-dark" href="index.html">Return Home →</a>
+          </div>
+        </div>
+        <div class="pba-detail-panel vipers-panel">
+          <img src="assets/columbus-vipers.jpg" alt="Columbus Vipers emblem" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-dark" id="contact">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="brand footer-logo">
+          <img class="brand-logo-img" src="assets/at-sports-logo.jpeg" alt="A&T Sports Inc. logo" />
+          <span class="brand-copy"><strong>SPORTS</strong><small>INC.</small></span>
+        </div>
+        <p>Professional basketball organization with dedicated ABA and PBA presentations.</p>
+      </div>
+
+      <div class="footer-col">
+        <small>NAVIGATION</small>
+        <a href="index.html#about">About</a><a href="index.html#teams">ABA Teams</a><a href="pba-teams.html">PBA Teams</a><a href="index.html#schedule">Schedule</a><a href="#profiles">Team Roster</a><a href="index.html#tickets">Tickets</a><a href="index.html#news">News</a>
+      </div>
+
+      <div class="footer-col">
+        <small>CONTACT</small>
+        <a href="tel:+17065307325">(706) 530-7325</a>
+        <span>Angela Culliver / Owner</span>
+        <span>Georgia, USA</span>
+      </div>
+
+      <div class="footer-col">
+        <small>SOCIAL</small>
+        <a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="#">YouTube ↗</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> A&T Sports Inc.</span>
+      <span>PBA TEAMS PRESENTED SEPARATELY BY LEAGUE.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

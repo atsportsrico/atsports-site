@@ -1,0 +1,2 @@
+const http=require('http'),fs=require('fs'),path=require('path'); const root=process.cwd();
+http.createServer((req,res)=>{let rel=decodeURIComponent(req.url.split('?')[0]); if(rel==='/' ) rel='/index.html'; const f=path.resolve(root,'.'+rel); if(!f.startsWith(root+path.sep)){res.writeHead(403);return res.end('Forbidden')} fs.readFile(f,(e,d)=>{if(e){res.writeHead(404);res.end('Not found')}else{res.writeHead(200);res.end(d)}})}).listen(5500,'127.0.0.1',()=>console.log('running'));
