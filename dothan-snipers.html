@@ -8,76 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .dothan-feature-hero {
-      background:
-        linear-gradient(90deg, rgba(7,9,20,.98) 0%, rgba(7,9,20,.90) 34%, rgba(7,9,20,.52) 58%, rgba(7,9,20,.18) 100%),
-        url("assets/dothan-snipers-feature.jpg") center / cover no-repeat;
-      isolation: isolate;
-    }
-
-    .dothan-feature-hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-      pointer-events: none;
-      background:
-        linear-gradient(90deg, rgba(7,9,20,.86) 0%, rgba(7,9,20,.48) 46%, rgba(7,9,20,.08) 72%, rgba(7,9,20,.24) 100%),
-        linear-gradient(180deg, rgba(7,9,20,.16), rgba(7,9,20,.34));
-    }
-
-    .dothan-hero-photo {
-      position: absolute;
-      z-index: 0;
-      top: 4%;
-      right: 2.5%;
-      width: 49%;
-      height: 92%;
-      object-fit: contain;
-      object-position: center;
-      filter: url(#snipersSharpen) contrast(1.09) saturate(1.04) brightness(1.03);
-      opacity: .98;
-      transform: translateZ(0);
-      image-rendering: auto;
-      box-shadow: 0 24px 72px rgba(0,0,0,.24);
-    }
-
-    .dothan-feature-hero .pba-hero-grid {
-      position: relative;
-      z-index: 3;
-    }
-
-    .team-photo-thumb { width:120px; height:82px; object-fit:cover; }
-    .pba-logo-thumb { width:72px; height:50px; object-fit:cover; }
-
-    @media (max-width: 900px) {
-      .dothan-feature-hero {
-        background:
-          linear-gradient(180deg, rgba(7,9,20,.90), rgba(7,9,20,.76)),
-          url("assets/dothan-snipers-feature.jpg") center / cover no-repeat;
-      }
-      .dothan-hero-photo {
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: 52% center;
-        opacity: .36;
-        filter: url(#snipersSharpen) contrast(1.08) saturate(1.04) brightness(.95);
-        box-shadow: none;
-      }
-    }
-  </style>
-</head>
+<style>.dothan-feature-hero{background:linear-gradient(90deg,rgba(7,9,20,.94),rgba(7,9,20,.2)),url("assets/dothan-snipers-feature-enhanced.svg") center/cover}.team-photo-thumb{width:120px;height:82px;object-fit:cover}.pba-logo-thumb{width:72px;height:50px;object-fit:cover}</style></head>
 <body class="pba-page">
-  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-    <filter id="snipersSharpen" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
-      <feConvolveMatrix order="3" kernelMatrix="0 -0.45 0 -0.45 2.8 -0.45 0 -0.45 0" preserveAlpha="true" />
-    </filter>
-  </svg>
-
   <header class="site-header" id="siteHeader">
     <a class="brand" href="index.html">
       <img class="brand-logo-img" src="assets/at-sports-logo.jpeg" alt="A&T Sports Inc. logo" />
@@ -94,8 +26,7 @@
       <div class="nav-dropdown active" data-nav-dropdown>
         <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true">
           Teams <span class="nav-caret" aria-hidden="true">▾</span>
-        </button>
-        <div class="nav-dropdown-menu" role="menu">
+        </button>        <div class="nav-dropdown-menu" role="menu">
           <a href="index.html#teams" role="menuitem"><span>ABA</span><strong>Circle City Pythons</strong><small>ABA</small></a>
           <a href="dothan-snipers.html" role="menuitem"><span>PBA</span><strong>Dothan Snipers</strong><small>PBA</small></a>
           <a href="columbus-vipers.html" role="menuitem"><span>PBA</span><strong>Columbus Vipers</strong><small>PBA</small></a>
@@ -110,14 +41,11 @@
 
   <main id="top">
     <section class="pba-page-hero section-dark dothan-feature-hero">
-      <img class="dothan-hero-photo" src="assets/dothan-snipers-feature.jpg" alt="Dothan Snipers team huddle" />
       <div class="container pba-hero-grid">
-        <div>
+        <div >
           <div class="section-kicker light">A&T SPORTS INC. / PBA PROGRAMS</div>
           <h1>DOTHAN<br><em>SNIPERS.</em></h1>
-          <p class="hero-lede">These teams have been added on their own page so the homepage can stay centered on the ABA presentation. Dothan Snipers and Columbus Vipers now have a clean, separate presence inside the A&T Sports website.</p>
-          <img class="pba-logo-thumb" src="assets/pba-logo.jpeg" alt="PBA logo">
-          <div class="hero-actions">
+          <p class="hero-lede">These teams have been added on their own page so the homepage can stay centered on the ABA presentation. Dothan Snipers and Columbus Vipers now have a clean, separate presence inside the A&T Sports website.</p><img class="pba-logo-thumb" src="assets/pba-logo.jpeg" alt="PBA logo"><div class="hero-actions">
             <a class="btn btn-primary" href="#profiles">Explore the Teams ↗</a>
             <a class="btn btn-ghost" href="index.html">Back to Homepage →</a>
           </div>
@@ -185,3 +113,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
