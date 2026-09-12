@@ -84,9 +84,7 @@ document.addEventListener('click', (event) => {
   });
 });
 
-// Homepage featured ABA team treatment.
-// Circle City Pythons is currently the only ABA team featured on the homepage,
-// so remove placeholder cards and give the real team a premium centered layout.
+// Homepage ABA team treatment.
 const homepageTeamsSection = document.querySelector('section.teams#teams');
 if (homepageTeamsSection) {
   homepageTeamsSection.classList.add('featured-team-section');
@@ -95,33 +93,27 @@ if (homepageTeamsSection) {
   const teamCards = teamGrid ? Array.from(teamGrid.querySelectorAll('.team-card')) : [];
   const featuredCard = teamCards[0];
 
+  // Keep only Circle City Pythons on the homepage.
   teamCards.slice(1).forEach(card => card.remove());
-
   if (teamGrid) teamGrid.classList.add('featured-team-grid');
 
   const sectionKicker = homepageTeamsSection.querySelector('.section-head .section-kicker');
   const sectionTitle = homepageTeamsSection.querySelector('.section-head h2');
   const sectionDescription = homepageTeamsSection.querySelector('.section-head > p');
 
-  if (sectionKicker) sectionKicker.textContent = '02 / FEATURED ABA TEAM';
+  if (sectionKicker) sectionKicker.textContent = '02 / ABA TEAM';
   if (sectionTitle) sectionTitle.innerHTML = 'CIRCLE CITY.<br><em>PYTHONS.</em>';
-  if (sectionDescription) {
-    sectionDescription.textContent = 'A&T Sports’ featured ABA program in Dothan, Alabama. Built around competition, development, and a growing basketball community.';
-  }
+  if (sectionDescription) sectionDescription.remove();
 
   if (featuredCard) {
     featuredCard.classList.add('featured-team-card');
 
-    const teamImage = featuredCard.querySelector('.team-image');
-    if (teamImage && !teamImage.querySelector('.featured-team-badge')) {
-      const badge = document.createElement('span');
-      badge.className = 'featured-team-badge';
-      badge.textContent = 'FEATURED ABA PROGRAM';
-      teamImage.appendChild(badge);
-    }
+    // Remove all visible "featured" labels.
+    const existingBadge = featuredCard.querySelector('.featured-team-badge');
+    if (existingBadge) existingBadge.remove();
 
     const metaLabel = featuredCard.querySelector('.team-meta small');
-    if (metaLabel) metaLabel.textContent = 'FEATURED TEAM';
+    if (metaLabel) metaLabel.remove();
 
     const cardLink = featuredCard.querySelector('.team-meta a');
     if (cardLink) {
@@ -131,6 +123,11 @@ if (homepageTeamsSection) {
     }
   }
 
+  // The PBA teams are already available from the Teams navigation dropdown,
+  // so keep this homepage section focused only on Circle City Pythons.
+  const pbaBridge = homepageTeamsSection.querySelector('.pba-bridge');
+  if (pbaBridge) pbaBridge.remove();
+
   const featuredStyles = document.createElement('style');
   featuredStyles.id = 'featured-team-homepage-styles';
   featuredStyles.textContent = `
@@ -138,10 +135,7 @@ if (homepageTeamsSection) {
       max-width: 1120px;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    .featured-team-section .section-head > p {
-      max-width: 460px;
+      margin-bottom: 44px;
     }
 
     .featured-team-grid {
@@ -160,41 +154,40 @@ if (homepageTeamsSection) {
     .featured-team-card .team-image {
       height: 560px;
       min-height: 560px;
-      padding: 42px 64px;
+      padding: 34px;
       border: 1px solid rgba(201, 158, 49, .3);
       background:
-        radial-gradient(circle at 50% 45%, rgba(40, 115, 59, .2), transparent 38%),
+        radial-gradient(circle at 50% 50%, rgba(40, 115, 59, .2), transparent 42%),
         linear-gradient(145deg, #0a1710 0%, #06100b 58%, #080b0d 100%);
       box-shadow: 0 34px 90px rgba(0, 0, 0, .34), inset 0 0 0 1px rgba(255, 255, 255, .025);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
 
     .featured-team-card .team-logo-img {
+      width: 82% !important;
+      height: 82% !important;
+      max-width: 610px;
+      max-height: 470px;
+      object-fit: contain !important;
+      object-position: center center !important;
+      display: block;
+      margin: auto;
+      transform: none !important;
       filter: drop-shadow(0 18px 28px rgba(0, 0, 0, .32));
     }
 
     .featured-team-card:hover .team-logo-img {
-      transform: scale(1.035);
-      filter: brightness(1.07) drop-shadow(0 22px 34px rgba(0, 0, 0, .36));
-    }
-
-    .featured-team-badge {
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      z-index: 4;
-      padding: 10px 13px;
-      background: #c99e31;
-      color: #07100b;
-      font-size: 9px;
-      font-weight: 950;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      box-shadow: 0 10px 24px rgba(0, 0, 0, .24);
+      transform: scale(1.015) !important;
+      filter: brightness(1.05) drop-shadow(0 22px 34px rgba(0, 0, 0, .36));
     }
 
     .featured-team-card .team-number {
       font-size: 92px;
       color: rgba(255, 255, 255, .045);
+      z-index: 2;
     }
 
     .featured-team-card .team-meta {
@@ -206,9 +199,9 @@ if (homepageTeamsSection) {
       max-width: none;
       font-size: clamp(42px, 5vw, 64px);
       letter-spacing: .01em;
+      margin-top: 0;
     }
 
-    .featured-team-card .team-meta small,
     .featured-team-card .team-sub {
       font-size: 10px;
     }
@@ -234,10 +227,6 @@ if (homepageTeamsSection) {
         display: block;
       }
 
-      .featured-team-section .section-head > p {
-        margin-top: 24px;
-      }
-
       .featured-team-grid {
         grid-template-columns: 1fr !important;
       }
@@ -245,7 +234,12 @@ if (homepageTeamsSection) {
       .featured-team-card .team-image {
         height: 430px;
         min-height: 430px;
-        padding: 34px;
+        padding: 28px;
+      }
+
+      .featured-team-card .team-logo-img {
+        width: 86% !important;
+        height: 86% !important;
       }
     }
 
@@ -253,14 +247,12 @@ if (homepageTeamsSection) {
       .featured-team-card .team-image {
         height: 350px;
         min-height: 350px;
-        padding: 26px 18px;
+        padding: 22px 14px;
       }
 
-      .featured-team-badge {
-        top: 16px;
-        right: 16px;
-        padding: 8px 10px;
-        font-size: 8px;
+      .featured-team-card .team-logo-img {
+        width: 90% !important;
+        height: 90% !important;
       }
 
       .featured-team-card .team-number {
