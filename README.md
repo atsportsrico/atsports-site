@@ -51,3 +51,7 @@ V18: PBA page render fix. PBA content no longer depends on reveal animation Java
 - ABA Teams routes to the homepage ABA section.
 - PBA Teams routes to the dedicated PBA page.
 - Dropdown works on desktop and mobile.
+
+## Deployment refresh
+- Removed the old Team Roster navigation links from the current site files.
+- Refreshed the `main` branch so GitHub Pages can publish the corrected navigation.

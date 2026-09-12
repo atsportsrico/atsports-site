@@ -110,10 +110,31 @@
     </div>
   </footer>
 
+  <script>
+    (async function () {
+      const hero = document.querySelector('.dothan-feature-hero');
+      if (!hero) return;
+      try {
+        const parts = await Promise.all([
+          'assets/dothan-avif-1.txt?v=final1',
+          'assets/dothan-avif-2.txt?v=final1',
+          'assets/dothan-avif-3.txt?v=final1',
+          'assets/dothan-avif-4.txt?v=final1'
+        ].map(url => fetch(url).then(response => {
+          if (!response.ok) throw new Error('Dothan hero image data failed to load');
+          return response.text();
+        })));
+        const src = `data:image/avif;base64,${parts.join('').replace(/\s/g, '')}`;
+        const image = new Image();
+        image.onload = function () {
+          hero.style.backgroundImage = `linear-gradient(90deg,rgba(7,9,20,.94),rgba(7,9,20,.2)),url("${src}")`;
+        };
+        image.src = src;
+      } catch (_) {
+        /* The known-good JPG background remains visible as a safe fallback. */
+      }
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-

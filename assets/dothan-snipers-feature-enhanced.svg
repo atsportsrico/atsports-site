@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1536" viewBox="0 0 1024 1536">
+  <defs>
+    <filter id="enhance" x="-2%" y="-2%" width="104%" height="104%" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="1.07" result="sat" />
+      <feComponentTransfer in="sat" result="contrast">
+        <feFuncR type="linear" slope="1.07" intercept="-0.035" />
+        <feFuncG type="linear" slope="1.07" intercept="-0.035" />
+        <feFuncB type="linear" slope="1.07" intercept="-0.035" />
+      </feComponentTransfer>
+      <feConvolveMatrix in="contrast" order="3" kernelMatrix="0 -0.30 0 -0.30 2.20 -0.30 0 -0.30 0" preserveAlpha="true" />
+    </filter>
+  </defs>
+  <image href="dothan-snipers-feature.jpg" x="0" y="0" width="1024" height="1536" preserveAspectRatio="xMidYMid slice" filter="url(#enhance)" />
+</svg>
