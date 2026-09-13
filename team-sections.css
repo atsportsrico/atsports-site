@@ -1,0 +1,14 @@
+/* Shared team media, roster, and league logo presentation. */
+.pba-page .pba-logo-thumb { display:block; box-sizing:border-box; width:88px; height:88px; object-fit:contain; padding:6px; margin:24px 0; background:#070914; border:2px solid var(--brand-2); border-radius:8px; box-shadow:0 4px 14px rgba(0,0,0,.25); }
+.team-content { padding:72px 0; scroll-margin-top:100px; }
+.team-content h2 { font-size:clamp(42px,6vw,72px); margin:12px 0 20px; }
+.team-section-intro { color:#d1d3dc; line-height:1.7; margin-bottom:28px; }
+.team-media-photo { margin:0; max-width:800px; border:1px solid rgba(244,160,30,.5); border-radius:8px; overflow:hidden; background:#11172b; }
+.team-media-photo a { display:block; }
+.team-media-photo a:focus-visible { outline:3px solid var(--brand-2); outline-offset:-3px; }
+.team-media-photo img { display:block; width:100%; height:auto; max-height:520px; object-fit:contain; }
+.team-media-photo figcaption { padding:16px 20px; font-size:14px; color:#d1d3dc; line-height:1.5; }
+.team-roster-notice { padding:28px; border-left:4px solid var(--brand-2); background:rgba(7,9,20,.045); max-width:800px; }
+.team-roster-notice h3 { font-size:26px; margin:0 0 12px; }
+.team-roster-notice p { color:var(--ink); line-height:1.7; margin:0; }
+@media(max-width:600px) { .team-content { padding:48px 0; } .team-roster-notice { padding:20px; } }
