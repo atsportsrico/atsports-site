@@ -1706,3 +1706,4 @@ img { max-width: 100%; }
 }
 .team-photo-thumb{width:120px;height:82px;object-fit:cover;border:2px solid var(--brand-2);border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.3);margin:18px 0 4px;display:block;}
 .pba-logo-thumb{width:72px;height:50px;object-fit:cover;border-radius:5px;margin:18px 0 4px 8px;vertical-align:top;}
+.dothan-feature-hero{background:linear-gradient(135deg,#070914,#11172b)!important}.dothan-feature-hero:after{display:none!important}
