@@ -18,3 +18,6 @@
 .team-roster-copy { min-width:0; }
 .team-profile-summary .pba-detail-copy { max-width:900px; }
 @media(max-width:700px) { .team-roster-layout { grid-template-columns:1fr; } .team-roster-brand { width:min(220px,100%); box-sizing:border-box; justify-self:center; } }
+
+/* Preserve the complete state silhouette in the Snipers artwork. */
+.team-roster-brand img[src="assets/dothan-snipers.png"] { object-fit:contain; background:#070914; }
