@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-<style>.dothan-feature-hero{background:linear-gradient(90deg,rgba(7,9,20,.98),rgba(7,9,20,.88));position:relative;isolation:isolate}.team-photo-thumb{width:120px;height:82px;object-fit:cover}.pba-logo-thumb{width:72px;height:50px;object-fit:cover} .dothan-feature-hero:after{content:"";position:absolute;z-index:-1;right:5%;top:14%;width:46%;height:70%;background:url("assets/dothan-snipers-feature.jpg") center/cover no-repeat;border:5px solid var(--brand-2);box-shadow:0 0 0 1px rgba(255,255,255,.35),0 22px 50px rgba(0,0,0,.45);border-radius:4px}.dothan-feature-hero .container{position:relative;z-index:1}@media(max-width:860px){.dothan-feature-hero:after{position:relative;display:block;right:auto;top:auto;width:90%;height:260px;margin:24px auto}} </style><link rel="stylesheet" href="team-sections.css" /></head>
+<style>.dothan-feature-hero{background:linear-gradient(90deg,rgba(7,9,20,.98),rgba(7,9,20,.88));position:relative;isolation:isolate}.team-photo-thumb{width:120px;height:82px;object-fit:cover}.pba-logo-thumb{width:72px;height:50px;object-fit:cover}.dothan-feature-hero:after{content:"";position:absolute;z-index:-1;right:5%;top:14%;width:46%;height:70%;background:url("assets/dothan-snipers-feature.jpg") center/cover no-repeat;border:5px solid var(--brand-2);box-shadow:0 0 0 1px rgba(255,255,255,.35),0 22px 50px rgba(0,0,0,.45);border-radius:4px}.dothan-feature-hero .container{position:relative;z-index:1}.snipers-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:24px auto 0;max-width:1100px}.snipers-gallery-item{display:block;height:170px;overflow:hidden;background:#111;border:1px solid #ffffff25}.snipers-gallery-item img{width:100%;height:100%;object-fit:cover;display:block}.snipers-gallery-item:focus-visible{outline:3px solid var(--brand-2);outline-offset:3px}.snipers-gallery-caption{color:#ffffffb0;font-size:.8rem;margin-top:16px}.snipers-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}.snipers-video-card{min-width:0}.snipers-video-frame{aspect-ratio:16/9;background:#101015;border:1px solid #171722;overflow:hidden}.snipers-video-frame iframe{width:100%;height:100%;display:block;border:0}.snipers-video-card>span{display:block;margin-top:9px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#555}@media(max-width:900px){.snipers-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.snipers-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:860px){.dothan-feature-hero:after{position:relative;display:block;right:auto;top:auto;width:90%;height:260px;margin:24px auto}}@media(max-width:560px){.snipers-video-grid{grid-template-columns:1fr;gap:16px}}@media(max-width:550px){.snipers-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.snipers-gallery-item{height:145px}}</style><link rel="stylesheet" href="team-sections.css" /></head>
 <body class="pba-page">
   <header class="site-header" id="siteHeader">
     <a class="brand" href="index.html">
@@ -88,12 +88,31 @@
         <div class="section-kicker light">Dothan Snipers / MEDIA</div>
         <h2 id="media-title">TEAM <em>MEDIA.</em></h2>
         <p class="team-section-intro">Inside the action. Explore photos from the Dothan Snipers.</p>
-        <figure class="team-media-photo">
-          <a href="assets/dothan-snipers-feature.jpg" aria-label="View full-size photo: Dothan Snipers team with their trophy">
-            <img src="assets/dothan-snipers-feature.jpg" alt="Dothan Snipers team with their trophy" loading="lazy" />
-          </a>
-          <figcaption>Dothan Snipers · Select the photo to view full size.</figcaption>
-        </figure>
+        <div class="snipers-gallery" aria-label="Dothan Snipers photo gallery">
+          <a class="snipers-gallery-item" href="assets/snipers-media-01.jpg"><img src="assets/snipers-media-01.jpg" alt="Dothan Snipers game action photo 1" loading="lazy"></a>
+          <a class="snipers-gallery-item" href="assets/snipers-media-02.jpg"><img src="assets/snipers-media-02.jpg" alt="Dothan Snipers game action photo 2" loading="lazy"></a>
+          <a class="snipers-gallery-item" href="assets/snipers-media-03.jpg"><img src="assets/snipers-media-03.jpg" alt="Dothan Snipers game action photo 3" loading="lazy"></a>
+          <a class="snipers-gallery-item" href="assets/snipers-media-04.jpg"><img src="assets/snipers-media-04.jpg" alt="Dothan Snipers game action photo 4" loading="lazy"></a>
+          <a class="snipers-gallery-item" href="assets/snipers-media-05.jpg"><img src="assets/snipers-media-05.jpg" alt="Dothan Snipers game action photo 5" loading="lazy"></a>
+        </div>
+        <p class="snipers-gallery-caption">Dothan Snipers · Game action and team moments.</p>
+      </div>
+    </section>
+
+    <section class="team-content section-light" id="videos" aria-labelledby="videos-title">
+      <div class="container">
+        <div class="section-kicker dark">Dothan Snipers / VIDEO</div>
+        <h2 id="videos-title">SNIPERS <em>VIDEO.</em></h2>
+        <p class="team-section-intro">Watch Dothan Snipers highlights, game moments, and team coverage.</p>
+        <div class="snipers-video-grid">
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/7AlVjTiP6f4?si=hveA2jVc8-bxY5Sr" title="Dothan Snipers video 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 01</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/UfJnQwUAgpk?si=I16-Q31kJiCX6buA" title="Dothan Snipers video 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 02</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/rVcOXO3JSK8?si=kyLLs-NvGRQHkfOK" title="Dothan Snipers video 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 03</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/FqL6kjVay7o?si=7KvKA6BHOrIzVyVH" title="Dothan Snipers video 4" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 04</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/FqL6kjVay7o?si=xUJKDpqjEwMQpabM" title="Dothan Snipers video 5" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 05</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/GCnNuwM9klg?si=tnXvbBl0LSzRKmMP" title="Dothan Snipers video 6" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 06</span></div>
+          <div class="snipers-video-card"><div class="snipers-video-frame"><iframe src="https://www.youtube.com/embed/3gaAVCHV-cs?si=FIJmgqgcGWSAQi3g" title="Dothan Snipers video 7" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><span>Snipers video 07</span></div>
+        </div>
       </div>
     </section>
     
