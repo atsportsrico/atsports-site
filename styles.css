@@ -320,7 +320,8 @@ img { max-width: 100%; }
 
 .impact { padding: 100px 0; position: relative; overflow: hidden; box-shadow: inset 0 6px 0 var(--brand); }
 .impact::after { content: "A&T"; position: absolute; right: -35px; bottom: -90px; font: 330px/.8 Impact, sans-serif; color: rgba(10,10,13,.06); }
-.impact-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: end; position: relative; z-index: 2; }
+.impact-grid { display: flex; justify-content: center; align-items: center; position: relative; z-index: 2; text-align: center; }
+.impact-copy { width: 100%; display: flex; flex-direction: column; align-items: center; }
 .impact h2 { font-size: clamp(60px, 6.5vw, 104px); margin-bottom: 0; }
 .impact h2 span { color: transparent; -webkit-text-stroke: 2px var(--ink); }
 .impact-stats { display: grid; grid-template-columns: 1fr 1fr; border-left: 1px solid rgba(10,10,13,.25); }
