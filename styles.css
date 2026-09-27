@@ -3355,3 +3355,11 @@ img { max-width: 100%; }
     margin: 18px auto 0 !important;
   }
 }
+
+
+/* Mobile intro spacing: tighten gap below hero marquee */
+@media (max-width: 860px) {
+  .intro {
+    padding-top: 72px !important;
+  }
+}
