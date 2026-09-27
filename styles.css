@@ -333,7 +333,7 @@ img { max-width: 100%; }
 .team-meta a:hover { background: var(--brand-2); color: var(--ink); }
 .team-sub { display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 13px; margin-top: 18px; }
 
-.impact { padding: 100px 0; position: relative; overflow: hidden; box-shadow: inset 0 6px 0 var(--brand); }
+.impact { padding: 100px 0; position: relative; overflow: hidden; box-shadow: none; }
 .impact::after { content: "A&T"; position: absolute; right: -35px; bottom: -90px; font: 330px/.8 Impact, sans-serif; color: rgba(10,10,13,.06); }
 .impact-grid { display: flex; justify-content: center; align-items: center; position: relative; z-index: 2; text-align: center; }
 .sponsor-impact-copy { max-width: 560px; margin: 22px auto 26px; font-size: 1.05rem; line-height: 1.6; }
