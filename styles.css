@@ -3335,13 +3335,19 @@ img { max-width: 100%; }
 }
 
 
-/* Mobile hero breathing room between featured photo and marquee */
+
+
+/* Mobile: physically lower marquee to reveal a real gap below the featured photo */
 @media (max-width: 860px) {
-  .hero-visual {
-    padding-bottom: 0 !important;
+  .hero {
+    margin-bottom: 18px !important;
+  }
+
+  .hero-ticker {
+    bottom: -18px !important;
   }
 
   .hero-photo-shell {
-    margin: 18px auto 18px !important;
+    margin: 18px auto 0 !important;
   }
 }
