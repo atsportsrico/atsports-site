@@ -2859,3 +2859,80 @@ img { max-width: 100%; }
     font-size:25px;
   }
 }
+
+
+/* =========================================================
+   V29 PYTHONS FAN CLUB — EXACT APPROVED MASCOT BANNER
+   ========================================================= */
+#fan-club.pythons-fan-banner-v29{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background:#f6f1e8;
+  border-top:1px solid rgba(7,9,20,.08);
+  border-bottom:18px solid var(--ink);
+}
+#fan-club .pythons-fan-banner-v29__frame{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  line-height:0;
+  overflow:hidden;
+}
+#fan-club .pythons-fan-banner-v29__frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:none;
+  margin:0;
+  object-fit:contain;
+}
+#fan-club .pythons-fan-banner-v29__hotspot{
+  position:absolute;
+  z-index:4;
+  display:block;
+  background:transparent;
+  border-radius:10px;
+  cursor:pointer;
+}
+#fan-club .pythons-fan-banner-v29__hotspot:focus-visible{
+  outline:4px solid #f2a51f;
+  outline-offset:3px;
+}
+#fan-club .pythons-fan-banner-v29__hotspot--tickets{
+  left:4.5%;
+  top:74.6%;
+  width:19.4%;
+  height:8.1%;
+}
+#fan-club .pythons-fan-banner-v29__hotspot--team{
+  left:24.8%;
+  top:74.6%;
+  width:19.2%;
+  height:8.1%;
+}
+#fan-club.pythons-fan-banner-v29::after{
+  content:"";
+  position:absolute;
+  z-index:5;
+  left:0;
+  right:0;
+  bottom:0;
+  height:8px;
+  pointer-events:none;
+  background:linear-gradient(90deg,var(--brand) 0 34%,var(--brand-2) 34% 61%,#087b42 61% 83%,var(--brand-3) 83% 100%);
+}
+#fan-club + .news{
+  margin-top:0!important;
+  border-top:0!important;
+}
+@media (max-width:760px){
+  #fan-club.pythons-fan-banner-v29{border-bottom-width:12px}
+  #fan-club .pythons-fan-banner-v29__frame img{
+    width:100%;
+    max-width:100%;
+  }
+}
