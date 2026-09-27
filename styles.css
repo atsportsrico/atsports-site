@@ -3338,6 +3338,10 @@ img { max-width: 100%; }
 /* Mobile hero breathing room between featured photo and marquee */
 @media (max-width: 860px) {
   .hero-visual {
-    padding-bottom: 18px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero-photo-shell {
+    margin: 18px auto 18px !important;
   }
 }
