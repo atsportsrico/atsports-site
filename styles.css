@@ -3024,3 +3024,161 @@ img { max-width: 100%; }
     box-shadow:0 10px 26px rgba(7,9,20,.10);
   }
 }
+
+
+/* =========================================================
+   V31 MOBILE SCHEDULE EDGE / OVERFLOW FIX
+   Keeps overview cards, season poster, buttons and game cards
+   fully inside the viewport on phones.
+   ========================================================= */
+@media (max-width: 700px) {
+  .schedule {
+    overflow-x: clip;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .schedule > .container,
+  .schedule-stage,
+  .schedule-months {
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .schedule-stage,
+  .schedule-overview,
+  .schedule-art,
+  .schedule-months,
+  .schedule-month-card,
+  .schedule-meta-grid,
+  .schedule-fact,
+  .schedule-team-top,
+  .schedule-team-top > div,
+  .month-game-list,
+  .schedule-game-item,
+  .schedule-game-copy {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .schedule-overview {
+    width: 100% !important;
+    padding: 18px !important;
+    overflow: hidden;
+  }
+
+  .schedule-team-top {
+    width: 100%;
+  }
+
+  .schedule-team-top h3,
+  .schedule-team-top p,
+  .schedule-fact strong,
+  .schedule-fact small,
+  .schedule-game-copy strong,
+  .schedule-location {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .schedule-fact {
+    width: 100%;
+    padding: 16px !important;
+  }
+
+  .schedule-fact strong {
+    font-size: 19px;
+    line-height: 1.18;
+  }
+
+  .schedule-cta {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    width: 100%;
+  }
+
+  .schedule-cta .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    justify-content: center;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .schedule-art {
+    width: 100% !important;
+    padding: 12px !important;
+    overflow: hidden;
+  }
+
+  .schedule-art::before {
+    inset: 12px;
+  }
+
+  .schedule-poster-img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+  }
+
+  .schedule-art-label {
+    left: 22px;
+    top: 22px;
+    max-width: calc(100% - 44px);
+    white-space: normal;
+  }
+
+  .schedule-month-card {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .schedule-game-item {
+    width: 100% !important;
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+  }
+
+  .schedule-game-copy strong {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .schedule > .container,
+  .schedule-stage,
+  .schedule-months {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .schedule-overview {
+    padding: 16px !important;
+  }
+
+  .schedule-fact {
+    padding: 14px !important;
+  }
+
+  .schedule-fact strong {
+    font-size: 17px;
+  }
+
+  .schedule-fact:nth-child(3) strong {
+    font-size: 15px;
+    letter-spacing: -.02em;
+  }
+
+  .schedule-team-top h3 {
+    font-size: clamp(32px, 10vw, 42px) !important;
+  }
+}
