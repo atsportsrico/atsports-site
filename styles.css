@@ -2366,3 +2366,111 @@ img { max-width: 100%; }
   #fan-club .pythons-fan-hero__wordmark{font-size:26px;right:10px;bottom:28px}
   #fan-club + .news{border-top-width:14px!important}
 }
+
+
+/* =========================================================
+   V26 APPROVED PYTHONS FAN CLUB BANNER
+   Uses the exact approved hero artwork as a responsive section.
+   ========================================================= */
+.pythons-fan-banner {
+  position: relative;
+  background: var(--paper);
+  overflow: hidden;
+  border-top: 1px solid rgba(7, 9, 20, .12);
+  border-bottom: 18px solid var(--ink);
+}
+
+.pythons-fan-banner__frame {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pythons-fan-banner__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.pythons-fan-banner__hotspot {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pythons-fan-banner__hotspot:focus-visible {
+  outline: 4px solid var(--brand-2);
+  outline-offset: 4px;
+}
+
+/* Hotspots track the baked-in CTA button positions proportionally. */
+.pythons-fan-banner__hotspot--tickets {
+  left: 4.4%;
+  top: 75.8%;
+  width: 19.8%;
+  height: 8.7%;
+}
+
+.pythons-fan-banner__hotspot--team {
+  left: 25.4%;
+  top: 75.8%;
+  width: 19.5%;
+  height: 8.7%;
+}
+
+.pythons-fan-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--brand) 0 34%,
+    var(--brand-2) 34% 61%,
+    #0a7a45 61% 83%,
+    var(--brand-3) 83% 100%
+  );
+  pointer-events: none;
+}
+
+@media (max-width: 860px) {
+  .pythons-fan-banner {
+    border-bottom-width: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pythons-fan-banner__frame {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .pythons-fan-banner__frame::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pythons-fan-banner__frame img {
+    width: 160%;
+    max-width: 160%;
+  }
+
+  .pythons-fan-banner__hotspot--tickets {
+    left: 7%;
+    top: 75.8%;
+    width: 31.7%;
+    height: 8.7%;
+  }
+
+  .pythons-fan-banner__hotspot--team {
+    left: 40.7%;
+    top: 75.8%;
+    width: 31.2%;
+    height: 8.7%;
+  }
+}
