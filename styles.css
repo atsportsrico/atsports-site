@@ -3337,14 +3337,18 @@ img { max-width: 100%; }
 
 
 
-/* Mobile: physically lower marquee to reveal a real gap below the featured photo */
+
+
+
+/* Mobile hero: reserve real space below the featured image before the marquee */
 @media (max-width: 860px) {
   .hero {
-    margin-bottom: 18px !important;
+    padding-bottom: 66px !important; /* 48px ticker + 18px visible gap */
+    margin-bottom: 0 !important;
   }
 
   .hero-ticker {
-    bottom: -18px !important;
+    bottom: 0 !important;
   }
 
   .hero-photo-shell {
