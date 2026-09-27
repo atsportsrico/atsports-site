@@ -3368,5 +3368,5 @@ img { max-width: 100%; }
 /* CULTURE PERIOD SPACING — keeps the final period from visually merging with the E */
 .news .section-head h2 .culture-dot {
   display: inline-block;
-  margin-left: .07em;
+  margin-left: .14em;
 }
