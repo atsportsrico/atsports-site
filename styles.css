@@ -2474,3 +2474,95 @@ img { max-width: 100%; }
     height: 8.7%;
   }
 }
+
+
+/* =========================================================
+   V27 PYTHONS FAN CLUB — REAL APPROVED BANNER ASSET
+   ========================================================= */
+#fan-club.pythons-fan-banner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f7f4ec;
+  border-top: 0;
+  border-bottom: 22px solid var(--ink);
+  overflow: hidden;
+}
+
+#fan-club .pythons-fan-banner__frame {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+#fan-club .pythons-fan-banner__frame img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+}
+
+#fan-club .pythons-fan-banner__hotspot {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+
+#fan-club .pythons-fan-banner__hotspot--tickets {
+  left: 4.45%;
+  top: 74.7%;
+  width: 19.35%;
+  height: 8.2%;
+}
+
+#fan-club .pythons-fan-banner__hotspot--team {
+  left: 24.85%;
+  top: 74.7%;
+  width: 19.15%;
+  height: 8.2%;
+}
+
+#fan-club::after {
+  display: none !important;
+}
+
+#fan-club + .news {
+  border-top: 0 !important;
+  margin-top: 0;
+}
+
+@media (max-width: 860px) {
+  #fan-club.pythons-fan-banner {
+    border-bottom-width: 14px;
+  }
+
+  #fan-club .pythons-fan-banner__frame,
+  #fan-club .pythons-fan-banner__frame img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #fan-club .pythons-fan-banner__hotspot--tickets {
+    left: 4.45%;
+    top: 74.7%;
+    width: 19.35%;
+    height: 8.2%;
+  }
+
+  #fan-club .pythons-fan-banner__hotspot--team {
+    left: 24.85%;
+    top: 74.7%;
+    width: 19.15%;
+    height: 8.2%;
+  }
+}
